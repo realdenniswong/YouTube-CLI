@@ -98,10 +98,10 @@ def cmd_proc(cmd):
       pgt = ''
       s_flag = True
   if (cmd.strip().isdigit()):
-    print("[========select command========]\n[========v for video, a for audio========]\n[========i to preview image, d to download as mp3========]\n[========q for quit========]")
     v_id = int(cmd)
     quit_vmenu = False
     while quit_vmenu == False:
+      print("[========select command========]\n[========v for video, a for audio========]\n[========i to preview image, d to download as mp3========]\n[========q for quit========]")
       vmenu_cmd = input()
       if vmenu_cmd == 'q':
         quit_vmenu = True
@@ -128,7 +128,7 @@ def error(code):
 #api_key_path = os.path.dirname(os.path.split(full_path)[0]) + "/apikey"
 #f = open(api_key_path, "r")
 #k = f.readline()
-k = "!!!!!!!!YOUR_API_KEY_HERE!!!!!!!!" #!!!!!!!!TYPE YOUR YOUR API KEY THIS LINE!!!!!!!!
+k = "AIzaSyDWYc8iVdVqGssvvp53J-nMlULNfV342Nw" #!!!!!!!!TYPE YOUR YOUR API KEY THIS LINE!!!!!!!!
 for x in sys.argv[1:]:
   if(x == "-np"):
     show_preview_image = False;
